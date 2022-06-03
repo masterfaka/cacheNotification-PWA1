@@ -11,7 +11,11 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "/assets/svg/*.gif"
+        ],
+        "urls": [
+          "https://node-hnapi.herokuapp.com/news**"
         ]
       }
     },
@@ -22,9 +26,20 @@
       "resources": {
         "files": [
           "/assets/**",
-          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|otf|ttf|woff|woff2)"
         ]
       }
     }
+  ],
+  "dataGroups": [{
+    "name": "commentsJson",
+    "urls": ["https://node-hnapi.herokuapp.com/item/**"],
+    "cacheConfig": {
+      "maxSize": 10,
+      "maxAge": "12h",
+      "timeout": "15s",
+      "strategy": "freshness"
+    }
+  }
   ]
 }

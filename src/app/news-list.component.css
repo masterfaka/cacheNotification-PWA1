@@ -1,0 +1,9 @@
+.card{
+  width: auto;
+  height: auto;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.bi, .bi-quote{
+  vertical-align: top;
+}
