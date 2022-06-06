@@ -33,7 +33,7 @@
   ],
   "dataGroups": [{
     "name": "commentsJson",
-    "urls": ["https://node-hnapi.herokuapp.com/item/**"],
+    "urls": ["https://node-hnapi.herokuapp.com/item**"],
     "cacheConfig": {
       "maxSize": 10,
       "maxAge": "12h",

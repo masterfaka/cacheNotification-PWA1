@@ -43,7 +43,7 @@ export class NewsListComponent implements OnInit, OnDestroy {
         ({action, notification}) => {
           // TODO: Do something in response to notification click.
           //test with chrome badge
-          //why7 only 2 buttons
+          //why7 only 2 buttons because limitations
           /*let notificationEj = {
             "notification": {
               "title": "MY AWSOME pwa Notification!",
@@ -66,6 +66,8 @@ export class NewsListComponent implements OnInit, OnDestroy {
           };*/
           console.log("user HAS CLICKED", {action, notification});
         });
+    }else{
+      this.subscribeToNotifications();
     }
   }
 

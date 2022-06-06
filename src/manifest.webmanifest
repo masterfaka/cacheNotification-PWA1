@@ -1,6 +1,6 @@
 {
-  "name": "pwa-app",
-  "short_name": "pwa-app",
+  "name": "pwa-App",
+  "short_name": "pwa-App",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
